@@ -106,7 +106,7 @@ nav .current a:visited{
 }
 
 /*welcome section*/
-.hearder-welcome {
+.header-welcome {
 	background-image: url(../img/main-banner.jpg);
 	background-size: cover;
 	padding-top: 68px;
@@ -125,9 +125,17 @@ nav .current a:visited{
 }
 
 /*desktop styles*/
-@media screen and (min-width: 1168px) {
+@media screen and (min-width: 760px) {
 	.container {
-		width: 1140px;
+		width: 706px;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.container {
+		width: 1168px;
+		padding: 0 16 px
 		margin: 0 auto;
 	}
 }
