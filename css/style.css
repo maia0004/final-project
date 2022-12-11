@@ -126,8 +126,18 @@ nav .current a:visited{
 	color: black;
 	background: #c78b07;
 }
+.smallboxsearch {
+	display: inline;
+	margin-top: 5px;
+	margin-bottom: 10px;
+  width: 91%;
+}
 
 /*button section*/
+.searchbutton {
+	background-color: #222222;
+	border-color: #c78b07;
+}
 .yellowbutton {
 	background-color: #c78b07;
 	text-align: center;
@@ -135,7 +145,7 @@ nav .current a:visited{
 	margin-left: 1em;
 }
 .blackbutton {
-	background-color: black;
+	background-color: #222222;
 	text-align: center;
 	color: white;
 	padding: 20px;
@@ -150,7 +160,7 @@ nav .current a:visited{
 	margin-left: 1em;
 }
 .sendbutton {
-	background-color: black;
+	background-color: #222222;
 	color:#c78b07;
 }
 
@@ -186,6 +196,18 @@ nav .current a:visited{
 	margin-left: auto;
 	margin-right: auto;
 }
+.img-services1 {
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.img-services2 {
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /*team section*/
 .team-grid {
@@ -201,8 +223,7 @@ nav .current a:visited{
 .vision-grid {
   background-image: url(../img/vision.jpg);
 	background-size: cover;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding: 15px;
 }
 .vision-grid h2 {
 	color: white;
@@ -222,13 +243,11 @@ nav .current a:visited{
 	margin-left: 0px;
 }
 .smallbox {
-	display: block;
 	margin-top: 5px;
 	margin-bottom: 10px;
   width: 100%;
 }
 .bigbox {
-	display: block;
 	margin-top: 5px;
 	margin-bottom: 10px;
   width: 100%;
@@ -271,7 +290,40 @@ iframe {
 .section-about {
 	background-color: #ffe6ac;
 }
-#imgaboutus {
+nav li {
+	display: inline;
+  text-align: center;
+}
+.logo {
+	display: inline-block;
 	float: left;
 }
+
+/*about section*/
+.section-about{
+	padding-bottom: 50px;
+}
+#imgaboutus {
+	float: left;
+	padding: 1em;
+}
+
+/*service section*/
+.service-grid {
+	display: grid;
+	background-size: 50%;
+	grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+/*vision*/
+.vision-grid {
+	padding-left: 100px;
+	padding-right: 100px;
+	background-image: url(../img/vision.jpg);
+	background-position: center;
+}
+
+/*team section*/
+
 }
