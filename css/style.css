@@ -121,7 +121,6 @@ nav {
 .bigdiv {
 	background-color: #c78b07;
 }
-
 nav a:link,
 nav a:visited {
 	font-size: 18px;
@@ -293,7 +292,7 @@ iframe {
 		padding: 0 16px;
 		margin: 0 auto;
 	}
-	/*about section*/
+/*about section*/
 .section-about {
 	background-color: #ffe6ac;
 }
@@ -345,7 +344,6 @@ nav .container {
 	padding: 1em;
 	width: 50%;
 }
-
 /*vision*/
 .vision-grid {
 	padding-left: 6%;
@@ -353,7 +351,6 @@ nav .container {
 	background-image: url(../img/vision.jpg);
 	background-position: center;
 }
-
 /*service*/
 .servicegrid {
 	display: grid;
@@ -363,32 +360,58 @@ nav .container {
 	justify-items: stretch;
 	column-gap: 15px;
 }
-
 /*team*/
 .gridteamversion {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 }
-.img-services1 {
+.imgjohn {
 	display: grid;
 	grid-column: 1;
 	grid-row: 1;
 }
 .aboutjohndoe {
 	display: grid;
+	background-color: #ffe6ac;
 	grid-column: 2;
 	grid-row: 1;
 }
-.img-services2 {
+.imgbob {
 	display: grid;
 	grid-column: 2;
 	grid-row: 1;
 }
 .aboutbobrite {
 	display: grid;
+	background-color: #ffe6ac;
 	grid-column: 1;
 	grid-row: 2;
+}
+.specialdiv {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 30px;
+}
+.messagediv {
+	display: grid;
+	grid-column: 1;
+	grid-row: 1;
+}
+.hoursdiv {
+	display: grid;
+	grid-column: 1/3;
+	grid-row: 2;
+}
+.locationdiv {
+	display: grid;
+	grid-column: 2;
+	grid-row: 1;
+}
+.section-footer {
+	padding-top: 2em;
+	padding-bottom: 1em;
 }
 
 }
