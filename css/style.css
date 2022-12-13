@@ -426,9 +426,6 @@ grid-row: 1;
 	grid-column: 1 / 3;
 	grid-row: 2;
 }
-.hours {
-	height: -1000px;
-}
 .locationdiv {
 	display: grid;
 	grid-column: 2;
