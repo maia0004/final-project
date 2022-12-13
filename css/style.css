@@ -337,7 +337,9 @@ nav .container {
 }
 /*about section*/
 .section-about{
-	padding-bottom: 62px;
+	display: flex;
+	gap: 1em;
+	flex-wrap: nowrap;
 }
 #imgaboutus {
 	float: left;
@@ -354,39 +356,59 @@ nav .container {
 /*service*/
 .servicegrid {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: 1fr 1fr;
-	align-content: center;
-	justify-items: stretch;
 	column-gap: 15px;
 }
+.servicegrid .service-grid:nth-child(1) {
+	grid-column: 1 / 4;
+}
+.servicegrid .service-grid:nth-child(2) {
+	grid-column: 4 / 7;
+}
+.servicegrid .service-grid:nth-child(3) {
+	grid-column: 1 / 3;
+	grid-row: 2 / 2;
+}
+.servicegrid .service-grid:nth-child(4) {
+	grid-column: 3 / 5;
+	grid-row: 2 / 2;
+}
+.servicegrid .service-grid:nth-child(5) {
+	grid-column: 5 / 7;
+	grid-row: 2 / 2;
+}
 /*team*/
-.gridteamversion {
+.gridteamversion .team-grid {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
+	grid-template-rows: 1fr;
 }
-.imgjohn {
+.gridteamversion .team-grid .img-team {
+	grid-column: 1 / 2;
+}
+.gridteamversion .team-grid .text-team {
+grid-column: 2 / 3;
+}
+.gridteamversion2 .team-grid {
 	display: grid;
-	grid-column: 1;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+.gridteamversion2 .team-grid .img-team {
+	grid-column: 2 / 3;
 	grid-row: 1;
 }
-.aboutjohndoe {
-	display: grid;
-	background-color: #ffe6ac;
-	grid-column: 2;
-	grid-row: 1;
+.gridteamversion2 .team-grid .text-team {
+grid-column: 1 / 2;
+grid-row: 1;
 }
-.imgbob {
-	display: grid;
-	grid-column: 2;
-	grid-row: 1;
+.team-grid {
+	margin-bottom: 0;
 }
-.aboutbobrite {
-	display: grid;
-	background-color: #ffe6ac;
-	grid-column: 1;
-	grid-row: 2;
+.img-team img {
+	width: 100%;
+	height: 100%;
 }
 .specialdiv {
 	display: grid;
@@ -401,8 +423,11 @@ nav .container {
 }
 .hoursdiv {
 	display: grid;
-	grid-column: 1/3;
+	grid-column: 1 / 3;
 	grid-row: 2;
+}
+.hours {
+	height: -1000px;
 }
 .locationdiv {
 	display: grid;
@@ -413,5 +438,7 @@ nav .container {
 	padding-top: 2em;
 	padding-bottom: 1em;
 }
+.sendbutton {
+	padding: 5px 6px;
 
 }
